@@ -1,54 +1,155 @@
 body {
-    background-color: LightSkyBlue; /* Change to a light blue color */
-    color: DarkSlateGray; /* Change text color to dark gray */
+    background-color: LightSkyBlue; 
+    color: darkslategray; 
+    font-family: 'Century Gothic', sans-serif;
+    margin: 20px;
+    padding: 20px;
 }
 
 .nav-bar {
-    background-color: MediumPurple; /* Change to a medium purple color */
+    background-color: MediumPurple; 
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .nav-bar a {
-    color: DarkSlateBlue; /* Change link color to dark blue */
+    float: left;
+    display: block;
+    color: DarkOliveGreen; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .nav-bar a:hover {
-    background-color: Plum; /* Change hover background color to light purple */
-    color: DarkViolet; /* Change hover text color to dark violet */
+    background-color: DarkMagenta; 
+    color: PaleGoldenRod; 
 }
 
+
 .paint::before {
-    color: MediumVioletRed; /* Change paint before content color */
+    content: "uhhh";
+    color: purple; 
+    font-weight: bold;
 }
 
 .paint:hover::before {
-    color: Orchid; /* Change paint before content color on hover */
+    content: "hovered? why?";
+    color: MediumVioletRed; 
 }
 
 .paint::after {
-    color: HotPink; /* Change paint after content color */
+    content: "okay";
+    color: Orchid; 
+    font-weight: bold;
 }
 
 .paint {
-    background-color: LightCyan; /* Change paint background color */
-    color: DarkMagenta; /* Change paint text color */
+    background-color: LightCyan; 
+    color: MediumPurple; 
+    padding: 5px;
+}
+
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.op_1 {
+    opacity: 1;
+}
+
+.op_0 {
+    opacity: 0;
+}
+
+.op_05 {
+    opacity: 0.5;
+}
+
+
+.none {
+    display: none;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+    font-weight: bold;
 }
 
 h3 {
-    background-color: MediumVioletRed; /* Change h3 background color */
-    color: DarkSlateGray; /* Change h3 text color */
+    background-color: MediumVioletRed; 
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
 }
 
 .banner {
-    background-color: DarkOrange; /* Change banner background color */
-    color: NavajoWhite; /* Change banner text color */
+    background-color: rgb(70, 130, 180); 
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .image {
-    filter: grayscale(100%) brightness(0.8); /* Adjust grayscale and brightness values */
+    transition: width 5s; 
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+
+/* style.css */
+
+/* style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image {
+    transition: width 5s; 
+    cursor: pointer;
 }
 
 .image:hover {
-    width: 600px; /* Change the width on hover to 600px */
+    width: 800px; 
 }
 
-/* You can continue modifying other colors as needed */
+.center {
+    text-align: center;
+}
+
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+
+.image-animated {
+    animation: fadeIn 1s ease-in-out;
+}
