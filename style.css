@@ -1,0 +1,54 @@
+body {
+    background-color: LightSkyBlue; /* Change to a light blue color */
+    color: DarkSlateGray; /* Change text color to dark gray */
+}
+
+.nav-bar {
+    background-color: MediumPurple; /* Change to a medium purple color */
+}
+
+.nav-bar a {
+    color: DarkSlateBlue; /* Change link color to dark blue */
+}
+
+.nav-bar a:hover {
+    background-color: Plum; /* Change hover background color to light purple */
+    color: DarkViolet; /* Change hover text color to dark violet */
+}
+
+.paint::before {
+    color: MediumVioletRed; /* Change paint before content color */
+}
+
+.paint:hover::before {
+    color: Orchid; /* Change paint before content color on hover */
+}
+
+.paint::after {
+    color: HotPink; /* Change paint after content color */
+}
+
+.paint {
+    background-color: LightCyan; /* Change paint background color */
+    color: DarkMagenta; /* Change paint text color */
+}
+
+h3 {
+    background-color: MediumVioletRed; /* Change h3 background color */
+    color: DarkSlateGray; /* Change h3 text color */
+}
+
+.banner {
+    background-color: DarkOrange; /* Change banner background color */
+    color: NavajoWhite; /* Change banner text color */
+}
+
+.image {
+    filter: grayscale(100%) brightness(0.8); /* Adjust grayscale and brightness values */
+}
+
+.image:hover {
+    width: 600px; /* Change the width on hover to 600px */
+}
+
+/* You can continue modifying other colors as needed */
