@@ -1,129 +1,34 @@
-body {
-    background-color: LightSkyBlue; 
-    color: darkslategray; 
-    font-family: 'Century Gothic', sans-serif;
-    margin: 20px;
-    padding: 20px;
+    font-style: italic;
 }
-
-.nav-bar {
-    background-color: MediumPurple; 
-    overflow: hidden;
-    margin-bottom: 20px;
+.block{
+    display:block;
+    font-style: italic;
 }
-
-.nav-bar a {
-    float: left;
-    display: block;
-    color: DarkOliveGreen; 
+*{
+    padding:0;
+    margin:0;
+  }
+  .nav{
+    background:rgb(253,185,185);
+    height:20px;
+    padding:10px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    margin-bottom: 10px;
+  }
+  .banner{
+    background-color:aqua;
+    height:200px;
+  }
+  .content{
+    background-color:rgb(246,213,213);
+    height:400px;
+  }
 
-.nav-bar a:hover {
-    background-color: DarkMagenta; 
-    color: PaleGoldenRod; 
-}
-
-
-.paint::before {
-    content: "uhhh";
-    color: purple; 
-    font-weight: bold;
-}
-
-.paint:hover::before {
-    content: "hovered? why?";
-    color: MediumVioletRed; 
-}
-
-.paint::after {
-    content: "okay";
-    color: Orchid; 
-    font-weight: bold;
-}
-
-.paint {
-    background-color: LightCyan; 
-    color: MediumPurple; 
-    padding: 5px;
-}
-
-
-.visible {
-    visibility: visible;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-
-.op_1 {
-    opacity: 1;
-}
-
-.op_0 {
-    opacity: 0;
-}
-
-.op_05 {
-    opacity: 0.5;
-}
-
-
-.none {
-    display: none;
-    font-weight: bold;
-}
-
-.inline {
-    display: inline;
-    font-weight: bold;
-}
-
-.block {
-    display: block;
-    font-weight: bold;
-}
-
-h3 {
-    background-color: MediumVioletRed; 
-    text-align: center;
-    color: white;
-}
-
-.container {
-    width: 100%;
-}
-
-.banner {
-    background-color: rgb(70, 130, 180); 
-    color: white;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.image {
-    transition: width 5s; 
-    cursor: pointer;
-}
-
-.center {
-    text-align: center;
-}
-
-.image {
-    filter: grayscale(100%);
-    filter: brightness(0.5);
-}
-
-/* style.css */
-
-/* style.css */
-
-@keyframes fadeIn {
+  .messi{
+    width:100%;
+    filter:grayscale(100%) invert(100%);
+  }
+  @keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -133,12 +38,12 @@ h3 {
 }
 
 .image {
-    transition: width 5s; 
+    transition: width 5s; /* Transition for width property */
     cursor: pointer;
 }
 
 .image:hover {
-    width: 800px; 
+    width: 800px; /* Change the width on hover */
 }
 
 .center {
@@ -148,8 +53,4 @@ h3 {
 .image {
     filter: grayscale(100%);
     filter: brightness(0.5);
-}
-
-.image-animated {
-    animation: fadeIn 1s ease-in-out;
 }
