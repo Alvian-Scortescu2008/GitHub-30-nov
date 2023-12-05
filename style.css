@@ -1,49 +1,113 @@
-    font-style: italic;
+body {
+    background-color: LightSkyBlue; 
+    color: darkslategray; 
+    font-family: 'Century Gothic', sans-serif;
+    margin: 20px;
+    padding: 20px;
 }
-.block{
-    display:block;
-    font-style: italic;
-}
-*{
-    padding:0;
-    margin:0;
-  }
-  .nav{
-    background:rgb(253,185,185);
-    height:20px;
-    padding:10px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .banner{
-    background-color:aqua;
-    height:200px;
-  }
-  .content{
-    background-color:rgb(246,213,213);
-    height:400px;
-  }
 
-  .messi{
-    width:100%;
-    filter:grayscale(100%) invert(100%);
-  }
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.nav-bar {
+    background-color: turquoise; 
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    color: DarkOliveGreen; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: turquoise; 
+    color: PaleGoldenRod; 
+}
+
+
+.paint::before {
+    content: "uhhh";
+    color: purple; 
+    font-weight: bold;
+}
+
+.paint:hover::before {
+    content: "hovered? why?";
+    color: MediumVioletRed; 
+}
+
+.paint::after {
+    content: "okay";
+    color: Orchid; 
+    font-weight: bold;
+}
+
+.paint {
+    background-color: LightCyan; 
+    color: MediumPurple; 
+    padding: 5px;
+}
+
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.op_1 {
+    opacity: 1;
+}
+
+.op_0 {
+    opacity: 0;
+}
+
+.op_05 {
+    opacity: 0.5;
+}
+
+
+.none {
+    display: none;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: turquoise; 
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+.banner {
+    background-color: rgb(70, 130, 180); 
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .image {
-    transition: width 5s; /* Transition for width property */
+    transition: width 5s; 
     cursor: pointer;
-}
-
-.image:hover {
-    width: 800px; /* Change the width on hover */
 }
 
 .center {
@@ -53,4 +117,39 @@
 .image {
     filter: grayscale(100%);
     filter: brightness(0.5);
+}
+
+/* style.css */
+
+/* style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image {
+    transition: width 5s; 
+    cursor: pointer;
+}
+
+.image:hover {
+    width: 800px; 
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+
+.image-animated {
+    animation: fadeIn 1s ease-in-out;
 }
